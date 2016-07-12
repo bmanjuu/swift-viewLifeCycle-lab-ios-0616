@@ -50,6 +50,10 @@ class ViewController: UIViewController {
     @IBAction func rollDice(sender: AnyObject) {
         let diceResult = randomDiceRoll()
         numberOfRolls += 1
+        if numberOfRolls > 6 {
+            resetView()
+            
+        }
         rollDiceResult(numberOfRolls, dice: diceResult)
         
         switch diceResult {
@@ -140,7 +144,27 @@ class ViewController: UIViewController {
                     roll6.text = String(dice)
                 default:
                     print("Restart!")
-            }
+        }
+    }
+    
+    func resetView(){
+        dice1.hidden = true
+        dice2.hidden = true
+        dice3.hidden = true
+        dice4.hidden = true
+        dice5.hidden = true
+        dice6a.hidden = true
+        dice6b.hidden = true
+        
+        roll1.hidden = true
+        roll2.hidden = true
+        roll3.hidden = true
+        roll4.hidden = true
+        roll5.hidden = true
+        roll6.hidden = true
+        
+        numberOfRolls = 1
+        //when this was set to 0, the dice spots will pop up but there would be no score label that would show up. this could be because this function is called within the rollDice IBAction after numberOfRolls was incremented 
     }
 
 //THE END
