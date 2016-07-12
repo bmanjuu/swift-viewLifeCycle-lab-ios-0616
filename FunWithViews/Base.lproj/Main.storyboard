@@ -17,6 +17,9 @@
                                 <rect key="frame" x="142" y="494" width="37" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="🎲"/>
+                                <connections>
+                                    <action selector="rollDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Mm-PF-RKm"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" id="feg-Q3-ZR7">
                                 <rect key="frame" x="20" y="50" width="80" height="83"/>
@@ -104,6 +107,21 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="dice1" destination="mGG-zA-Ne4" id="lpV-6J-yeQ"/>
+                        <outlet property="dice2" destination="feg-Q3-ZR7" id="9ja-v1-ZpW"/>
+                        <outlet property="dice3" destination="cbR-xG-hp4" id="IOH-6N-Phm"/>
+                        <outlet property="dice4" destination="RO2-0y-KeH" id="OTu-Z9-lAX"/>
+                        <outlet property="dice5" destination="EMF-V2-YkO" id="XDH-Ty-Cf2"/>
+                        <outlet property="dice6a" destination="rPa-hc-zUV" id="Zru-7l-IwO"/>
+                        <outlet property="dice6b" destination="at7-5M-EzM" id="uVT-ec-q7q"/>
+                        <outlet property="roll1" destination="WUx-Sv-4fn" id="LYV-0W-6hj"/>
+                        <outlet property="roll2" destination="Hkz-se-DQc" id="QCf-dG-2ia"/>
+                        <outlet property="roll3" destination="GaJ-Db-ElK" id="LnB-RC-rqw"/>
+                        <outlet property="roll4" destination="vnH-T3-gb6" id="MG1-mh-jCu"/>
+                        <outlet property="roll5" destination="KzY-ma-EJC" id="Hxo-aa-dl8"/>
+                        <outlet property="roll6" destination="af3-M0-44r" id="Umw-Nm-6UG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
